@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
     #p self.characters[0].name
     shows = [ ]
     self.characters.each do |c|
+      p c
       p show = Show.find_or_create_by(characters: c.name)
       p show.name
     end
