@@ -4,7 +4,8 @@ class Show < ActiveRecord::Base
   belongs_to :network
   
   def actors_list
-    p self.actors
+    p self.actors.each do |actor|
+      
   end
   
   def build_network(call_letters)
