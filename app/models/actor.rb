@@ -13,7 +13,7 @@ class Actor < ActiveRecord::Base
     self.characters.each do |c|
       p c
       p show = Show.find_or_create_by(id: c.show_id)
-      #p show.name
+      p show.name
     end
     
   end
