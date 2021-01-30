@@ -3,8 +3,11 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network
   
+  #this method returns a list of the full names of each actor associated with the show
   def actors_list
-    p self.actors.each do |actor|
+    self.actors.each do |actor|
+      actor.full_name  
+
       
   end
   
