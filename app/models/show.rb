@@ -6,9 +6,8 @@ class Show < ActiveRecord::Base
   #this method returns a list of the full names of each actor associated with the show
   def actors_list
     self.actors.each do |actor|
-      actor.full_name  
-
-      
+      actor.full_name
+    end
   end
   
   def build_network(call_letters)
