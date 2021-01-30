@@ -9,7 +9,10 @@ class Actor < ActiveRecord::Base
   def list_roles
     p self
     p self.characters[0].name
-    #p show = Show.find_or_create_by(name: character.name)
+    shows = [ ]
+    self.characters.each do |c|
+      p show = Show.find_or_create_by(name: self.c.name)
+    end
     
   end
 
