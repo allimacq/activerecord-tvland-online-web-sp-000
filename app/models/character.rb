@@ -10,6 +10,7 @@ class Character < ActiveRecord::Base
     show = Show.find_or_create_by(show_name)
     self.show_id = show.id
     show.characters << self
+    show
   end
   
 end
