@@ -7,8 +7,8 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-    character = self.characters
-    p character.name
+    #character = self.characters
+    p self.characters.name
     #p show = Show.find_or_create_by(name: character.name)
     
   end
