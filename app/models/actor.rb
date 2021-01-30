@@ -7,12 +7,7 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-   self.characters.each do |c|
-     p c.name
-     show = Show.find_by(characters: "#{c.name}")
-     p show
-   end
-   #p self.characters
+    p self
   end
 
   
